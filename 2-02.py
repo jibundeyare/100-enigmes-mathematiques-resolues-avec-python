@@ -3,8 +3,8 @@
 
 # Analysis
 #
-# 1000 is an event number. To obtain an even number with a sum, we must
-# add up to event numbers or two odd numbers. Which means there are no
+# 1000 is an even number. To obtain an even number with a sum, we must
+# add up two even numbers or two odd numbers. Which means there are no
 # two consecutive numbers (wich must be odd and even) which can add up
 # to 1000.
 #

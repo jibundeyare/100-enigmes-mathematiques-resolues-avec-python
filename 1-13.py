@@ -3,7 +3,7 @@
 
 # Analysis
 #
-# Pyramids with a square base have specific numberof bullets:
+# Pyramids with a square base have specific number of bullets:
 # - 1 * 1 = 1
 # - 1 * 1 + 2 * 2 = 1 + 2 * 2 = 5
 # - 1 * 1 + 2 * 2 + 3 * 3 = 5 + 3 * 3 = 14
