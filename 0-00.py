@@ -5,7 +5,8 @@
 #
 # ...
 
-# Algorithmic complexity: O(?)
+# Algorithmic time complexity: O(?)
+# Algorithmic space complexity: O(?)
 
 from timeit import default_timer as timer
 
