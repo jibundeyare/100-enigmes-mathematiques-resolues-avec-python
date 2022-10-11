@@ -40,7 +40,7 @@
 # Now we have all the combinations we can try.
 #
 # For each combination, we can try to compute the rest of the rows the
-# same way because we will also have to numbers per row.
+# same way because we will also have two numbers per row.
 
 # Algorithmic complexity: O(n ** 6)
 #
