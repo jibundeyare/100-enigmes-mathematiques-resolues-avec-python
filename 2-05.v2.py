@@ -90,15 +90,11 @@ rows = [
 
 differences = [0] * 6
 used_values = fixed_values.copy()
-stop = False
 
 # find diagonal 1 numbers
 differences[0] = total - (rows[1][1] + rows[3][3])
 
 for i in range(differences[0] - max_value, max_value + 1):
-    if stop:
-        break
-
     i2 = differences[0] - i
 
     if i == i2 or i in used_values or i2 in used_values:
@@ -117,9 +113,6 @@ for i in range(differences[0] - max_value, max_value + 1):
     differences[1] = total - (rows[0][0] + rows[0][2])
 
     for j in range(differences[1] - max_value, max_value + 1):
-        if stop:
-            break
-
         j2 = differences[1] - j
 
         if j == j2 or j in used_values or j2 in used_values:
@@ -138,9 +131,6 @@ for i in range(differences[0] - max_value, max_value + 1):
         differences[2] = total - (rows[2][0] + rows[2][2])
 
         for k in range(differences[2] - max_value, max_value + 1):
-            if stop:
-                break
-
             k2 = differences[2] - k
 
             if k == k2 or k in used_values or k2 in used_values:
@@ -159,9 +149,6 @@ for i in range(differences[0] - max_value, max_value + 1):
             differences[3] = total - (rows[0][3] + rows[2][1])
 
             for l in range(differences[3] - max_value, max_value + 1):
-                if stop:
-                    break
-
                 l2 = differences[3] - l
 
                 if l == l2 or l in used_values or l2 in used_values:
@@ -180,9 +167,6 @@ for i in range(differences[0] - max_value, max_value + 1):
                 differences[4] = total - (rows[1][1] + rows[1][2])
 
                 for m in range(differences[4] - max_value, max_value + 1):
-                    if stop:
-                        break
-
                     m2 = differences[4] - m
 
                     if m == m2 or m in used_values or m2 in used_values:
@@ -201,9 +185,6 @@ for i in range(differences[0] - max_value, max_value + 1):
                     differences[5] = total - (rows[3][0] + rows[3][3])
 
                     for n in range(differences[5] - max_value, max_value + 1):
-                        if stop:
-                            break
-
                         n2 = differences[5] - n
 
                         if n == n2 or n in used_values or n2 in used_values:
@@ -225,7 +206,7 @@ for i in range(differences[0] - max_value, max_value + 1):
                             for row in rows:
                                 print(row)
 
-                            stop = True
+                            print()
 
                     used_values.pop()
                     used_values.pop()
@@ -251,5 +232,11 @@ print('duration:', duration)
 # [15, 4, 5, 10]
 # [2, 9, 16, 7]
 # [6, 13, 12, 3]
-# duration: 0.0005808429996250197
+#
+# [15, 8, 1, 10]
+# [11, 4, 5, 14]
+# [2, 13, 12, 7]
+# [6, 9, 16, 3]
+#
+# duration: 0.013134819000697462
 
