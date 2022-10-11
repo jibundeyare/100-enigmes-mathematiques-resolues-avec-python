@@ -16,5 +16,5 @@ start = timer()
 # stop benchmark
 end = timer()
 duration = end - start
-print('duration:', duration)
+print(f'{duration=}')
 
