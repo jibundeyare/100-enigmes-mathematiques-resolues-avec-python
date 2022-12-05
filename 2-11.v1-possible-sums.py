@@ -20,7 +20,9 @@
 # x + 3 + n : possible_sum_c + n
 # ...
 # x + n + n : possible_sum_n + n
-
+#
+# Let's test with the following initial scores:
+#
 # scores = [3, 5, 7]
 #
 # 1 : ∅
@@ -32,7 +34,9 @@
 # 7 : 7         3 consecutive numbers
 # ...           from here it's possible to obtain any number by adding 3
 #               to the number that is 3 positions behind
-
+#
+# Now let's test with the following initial scores:
+#
 # scores = [11, 12, 13]
 #
 # 1 : ∅
@@ -103,8 +107,8 @@
 # ...           from here it's possible to obtain any number by adding
 #               11 to the number that is 11 positions behind
 
-# Algorithmic time complexity: O(?)
-# Algorithmic space complexity: O(?)
+# Algorithmic time complexity: O(n)
+# Algorithmic space complexity: O(n)
 
 from timeit import default_timer as timer
 
